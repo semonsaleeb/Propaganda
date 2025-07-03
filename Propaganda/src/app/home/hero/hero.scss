@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 .hero-section {
-    background-color: #000000;
+background: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.6)),
+            url('/assets/Images/Section.jpg') no-repeat center center;
+background-size: cover;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
@@ -45,6 +47,7 @@
 
 .manage_word {
     font-weight: normal;
+    font-size: 6rem;
 }
 
 .rating-section {
