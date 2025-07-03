@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+.hero-section {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    padding-top: 7rem;
+    position: relative;
+
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1 1 100%;
+
+}
+
+.hero-title {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.02em;
+    width: 100%;
+}
+
+
+.manage_word {
+    font-weight: normal;
+}
+
+.rating-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 15rem;
+}
+
+.rating-score {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #BAFF39;
+}
+
+.review-count {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+    top: -1rem;
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.star {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    /* square size */
+    height: 30px;
+    background-color: #29CC96;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    /* Optional: slight rounding */
+}
+
+
+.rating-description {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0;
+    max-width: 400px;
+}
+
+.hero-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circular-badge {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.badge-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.badge-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.arrow-icon {
+    font-size: 1.5rem;
+    color: #00ff88;
+    transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-section {
+        padding: 1rem;
+
+    }
+
+    .circular-badge {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .score {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+.des {
+
+    display: flex;
+    gap: 2rem;
+    /* Optional: space between the two rating sections */
+    align-items: flex-start;
+    /* Align items at the top */
+}
+
+.description {
+    width: 35rem;
+    padding-top: 1rem;
+}
+
+
+.circle-badge-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    bottom: -12rem;
+    right: -4rem;
+}
+
+.circle-text {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-30deg);
+    /* Adjust rotation as per the image */
+}
+
+.center-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -65%) rotate(2deg);
+    font-size: 4rem;
+    color: #00ff88;
+}
+
+
+
+
+.scrolling-line {
+    background-color: #BAFF39;
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  width: 100%;}
+  
+
+.scrolling-text {
+    display: flex;
+    margin-left: 4rem;
+  //  animation: scroll-text 15s linear infinite;
+}
+
+.scrolling-text span {
+    overflow: none;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #000;
+    word-spacing: 4rem;
+    /* space between words */
+    padding-right: 1rem;
+    /* gap between repeats */
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+

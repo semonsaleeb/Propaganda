@@ -1,0 +1,62 @@
+.header {
+  background-color: #000000;
+  padding: 1rem;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.nav-section.center {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Archivo", sans-serif;
+  font-size: 16.85px;
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", sans-serif;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-section.right{
+padding-right: 40px;
+}
+.get-start-btn {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 52.67px;
+  text-decoration: none;
+  font-size: 14px;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+
+
+}
+
+.get-start-btn:hover {
+  background-color: #eaeaea;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.cards-container {
+    display: grid;
+    gap: 16px;
+    padding: 24px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+
+
+
+
+    //   &:hover {
+    //     transform: translateY(-4px);
+    //     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    //   }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #333;
+    }
+
+    .card.main-card.h3 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        margin-bottom: 24px;
+    }
+
+    .sub_heading {
+        display: flex;
+    }
+
+    .sub_img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sub_title {
+        margin-left: 2rem;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .sub_paragraph {
+        margin-left: 4rem;
+        width: 16rem;
+    }
+.h2{
+    color: #000000;
+    font-size: 4rem;
+}
+    .card-link {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        background-color: #BAFF39;
+        padding:0.7rem ;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+   
+}
+ .more_link{
+         display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #5C5C5C;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+.main-card {
+    background: white;
+
+    h2 {
+        color: #000000;
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    p {
+        color: #5C5C5C;
+        padding-left: 8px;
+                
+
+    }
+
+    .card-link {
+        color: #5C5C5C;
+        font-weight: 600;
+    }
+}
+
+.section_3 {
+    display: flex;
+}
+.col_2,.col_3{
+    width: 50rem;
+}
+.detail_img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-top: 1rem;
+}
