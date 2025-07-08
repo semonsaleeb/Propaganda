@@ -1,0 +1,33 @@
+.header {
+  background: url('/assets/Images/Section - header.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 0.2rem 0;
+  color: white;
+}
+
+.logo {
+  font-family: "Archivo", sans-serif;
+  font-size: 16.85px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Archivo", sans-serif;
+  color: white !important;
+  padding: 0 1rem;
+}
+
+.get-start-btn {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 52.67px;
+  font-size: 14px;
+  font-family: "Archivo", sans-serif;
+  text-decoration: none;
+}
+
+.get-start-btn:hover {
+  background-color: #eaeaea;
+}

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.footer {
+  background: #000 url('/assets/Images/footer.jpg') no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; /* or fixed, depending on your needs */
+  color: white;
+  min-height: 134vh; /* ✅ Stretch to full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0;
+    overflow-x: hidden;
+
+}
+
+
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #17a2b8 !important;
+}
+
+.contact-info p {
+  color: #adb5bd;
+  font-size: 0.9rem;
+}
+
+.logo-icon {
+  color: #6c757d;
+}
+
+.brand-text h2 {
+  color: #dee2e6;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.social-links a {
+  font-size: 0.9rem;
+  color: #adb5bd;
+}
+
+.social-links a:hover {
+  color: #17a2b8 !important;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+        overflow-x: hidden;
+
+    padding: 0 1rem;
+  }
+
+  .footer .row > div {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+}

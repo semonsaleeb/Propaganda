@@ -1,0 +1,82 @@
+/* In your component's SCSS file */
+:host {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-light {
+  background-color: #F8F8F8 !important;
+}
+
+.testimonial-img {
+  width: 100%;
+  max-width: 22.5rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.content-column {
+  margin-left: -5rem;
+  z-index: 1;
+}
+
+.star {
+  color: #000000;
+}
+
+.display-3 {
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.decorative-img {
+  width: 10rem;
+  height: 10rem;
+  transform: translateY(50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  
+  .content-column {
+    margin-left: 0;
+    margin-top: -3rem;
+  }
+  
+  .testimonial-img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2rem;
+  }
+  
+  .display-5 {
+    font-size: 1.75rem;
+  }
+  
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+  
+  .decorative-img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-3 {
+    font-size: 1.8rem;
+  }
+  
+  .decorative-img {
+    width: 6rem;
+    height: 6rem;
+  }
+}

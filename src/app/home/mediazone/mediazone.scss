@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+ /* Custom styles */
+   body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+    .btn-custom {
+        background-color: #BAFF39;
+        color: #000;
+        font-weight: 500;
+        border: none;
+    }
+.stretched-heading {
+  font-size: 3.5rem;
+  display: inline-block;
+  transform: scaleX(1.2);
+  transform-origin: left;
+  line-height: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .stretched-heading {
+    font-size: 1.4rem;
+    transform: scaleX(1.1);
+    line-height: 2.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stretched-heading {
+    font-size: 1rem;
+    transform: scaleX(1.05);
+    line-height: 2.2rem;
+  }
+}
+
+
+
+    .semi-bold-text {
+  font-weight: 600;
+}
+
+    .btn-custom:hover {
+        text-decoration: underline;
+    }
+    
+    .stat-box {
+        transition: transform 0.3s ease;
+    }
+    
+    .stat-box:hover {
+        transform: translateY(-5px);
+    }
+    
+    .bg-highlight {
+        background-color: #ccff00 !important;
+    }
+    
+    .corner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1199.98px) {
+        .display-4 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+        
+        .stat-box h2 {
+            font-size: 3.5rem;
+        }
+    }
+    
+    @media (max-width: 991.98px) {
+        .display-4 {
+            font-size: 2.5rem;
+        }
+        
+        .stat-box {
+            padding: 1.5rem !important;
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        .display-4 {
+            font-size: 2rem;
+        }
+        
+        .stat-box h2 {
+            font-size: 3rem;
+        }
+        
+        .row.g-3 > [class^="col-"] {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media (max-width: 575.98px) {
+        .display-4 {
+            font-size: 1.8rem;
+        }
+        
+        .stat-box h2 {
+            font-size: 2.5rem;
+        }
+    }

@@ -1,0 +1,46 @@
+<!-- Company Logos Section -->
+<section class="py-5 bg-white text-center">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-center m- flex-wrap">
+      <h5 class="display-7 fw-bold mb-5">We worked with the world's best companies</h5>
+    </div>
+
+    <div class="row justify-content-center align-items-center g-4 mx-0 m-0">
+      <div class="col-6 col-md-2 logo-col" *ngFor="let logo of logos">
+        <img [src]="logo" class="img-fluid grayscale" alt="Company logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-5 bg-light mt-5 mb-5">
+  <div class="container-fluid px-4 px-md-5">
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- Text Section -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <h1 class="fw-bold text-uppercase m-0">Don't miss a thing!</h1>
+        <p class="text-muted m-0 limited-width mx-auto mx-md-0">
+          Get our latest tips on how to improve your digital presence, subscribe to our free newsletter.
+        </p>
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-12 col-md-6 mt-4 mt-md-0 d-flex justify-content-md-end">
+        <form class="d-flex flex-column flex-md-row w-100 w-md-auto gap-3 gap-md-0">
+          <input 
+            type="email" 
+            class="form-control form_input" 
+            placeholder="example@gmail.com">
+          <button 
+            type="submit" 
+            class="btn btn-dark form_btn">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>

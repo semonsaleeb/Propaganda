@@ -1,0 +1,104 @@
+/* GLOBAL PREVENT SCROLL */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Section Background */
+.sec1 {
+  background: url('/assets/Images/Container.jpg') no-repeat center center;
+  background-size: cover;
+  margin-top: 7rem;
+}
+
+/* Green Box */
+.greenArea {
+  max-width: 22rem;
+  height: auto;
+  background-color: #BAFF39;
+  margin: 8rem auto -5rem auto;
+  word-wrap: break-word;
+}
+
+/* Feature Checkmark */
+.feature-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.feature-icon::after {
+  content: '✓';
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Pricing Card Effects */
+.rotate-left {
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease;
+}
+.rotate-right {
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
+.lift-up {
+  transform: translateY(-25px);
+  transition: transform 0.3s ease;
+}
+
+/* Buttons */
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+.btn-success {
+  background-color: #7ed321 !important;
+  border-color: #7ed321 !important;
+}
+.btn-success:hover {
+  background-color: #6bb01a !important;
+  border-color: #6bb01a !important;
+}
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+  .greenArea {
+    margin-top: 5rem;
+  }
+  .display-7 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rotate-left,
+  .rotate-right,
+  .lift-up {
+    transform: none !important;
+  }
+  .greenArea {
+    margin: 2rem auto;
+    max-width: 100% !important;
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-3 {
+    font-size: 1.5rem;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+}

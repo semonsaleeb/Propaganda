@@ -1,0 +1,53 @@
+<!-- In your Angular component template -->
+<div class="container-fluid bg-light py-5">
+  <h1 class="text-center display-3 fw-light mb-5 py-4 fw-semibold">HEAR WHAT OUR SATISFIED <br>CLIENTS HAVE TO SAY</h1>
+
+  <div class="container">
+    <div class="row g-0 position-relative">
+      <!-- Image Column -->
+      <div class="col-lg-5 d-flex align-items-start">
+        <img [src]="'assets/Images/client.jpg'" 
+             alt="Client Image" 
+             class="img-fluid testimonial-img">
+      </div>
+      
+      <!-- Content Column -->
+      <div class="col-lg-7 ps-lg-5 bg-light p-5 content-column">
+        <!-- Rating Stars -->
+        <div class="rating mb-4">
+          <span *ngFor="let star of [1,2,3,4,5]" 
+                class="star fs-3">★</span>
+        </div>
+        
+        <!-- Testimonial Title -->
+        <h2 class="display-5 fw-semibold mb-4 text-black">AMAZING WORK.</h2>
+        
+        <!-- Testimonial Text -->
+        <p class="fs-5 text-secondary mb-4 lh-lg">
+          "Working with agentise was a game-changer for our business. Their innovative strategies and creative solutions helped us reach new audiences and grow our brand. The team's dedication and expertise are unparalleled."
+        </p>
+        
+        <!-- Client Info -->
+        <div class="client-info mb-4">
+          <div class="text-uppercase fw-bold mb-1">EMILY JOHNSON</div>
+          <div class="text-uppercase text-muted small">FOUNDER, LIGHTHOUSE TECH</div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <div class="arrows mt-4">
+          <button class="btn p-0 me-3">
+            <img [src]="'assets/Images/left.svg'" alt="Previous">
+          </button>
+          <button class="btn p-0">
+            <img [src]="'assets/Images/right.svg'" alt="Next">
+          </button>
+        </div>
+      </div>
+      
+      <!-- Bottom Decorative Image -->
+      <img [src]="'assets/Images/bottom_right.png'" 
+           alt="Decoration" 
+           class="position-absolute bottom-0 end-0 decorative-img" style="z-index: 10;">
+    </div>
+  </div>
+</div>

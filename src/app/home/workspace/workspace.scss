@@ -1,0 +1,74 @@
+ /* Custom styles to match your design */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .card {
+        background: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    // .card:hover {
+    //     transform: translateY(-4px);
+    //     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    // }
+    
+    .btn-custom {
+        background-color: #BAFF39;
+        border: none;
+        width: 50%;
+    }
+    
+    .btn-custom:hover {
+        text-decoration: underline;
+    }
+    
+    .more_link:hover {
+        text-decoration: underline;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .display-4 {
+            font-size: 2.5rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .display-4 {
+            font-size: 2rem;
+        }
+        
+        .card-body {
+            padding: 1.5rem !important;
+        }
+        
+        .btn-custom {
+            width: 100%;
+        }
+        
+        .col-lg-4, .col-md-6 {
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .display-4 {
+            font-size: 1.8rem;
+        }
+        
+        .d-flex.align-items-center.mb-3 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .d-flex.align-items-center.mb-3 img {
+            margin-bottom: 0.5rem;
+            margin-left: 0;
+        }
+        
+        .text-secondary.ms-5.ps-3 {
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
